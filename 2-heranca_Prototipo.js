@@ -30,3 +30,24 @@ Object.setPrototypeOf ( admin, user ); // Herança de protótipo, admin herda a 
 admin.Criar_Curso();
 console.log ( `\n` );
 admin.Exibir_Infos();
+console.log ( `\n` );
+
+// Cadeia de Protótipo
+
+console.log ( admin.__proto__ );
+console.log ( `\n` );
+
+console.log ( `${admin.__proto__.__proto__}` );
+console.log ( `\n` );
+
+console.log ( `${admin.__proto__.__proto__.__proto__}` );
+console.log ( `\n` );
+
+console.log ( String.prototype );
+console.log ( `\n` );
+
+/*
+	__proto__ é uma propriedade que todos os objetos têm e que aponta para o protótipo que foi definido para aquele objeto. __proto__ será descontinuado
+
+	prototype é uma propriedade da função que é definida como protótipo quando usamos new para criar novos objetos.
+*/
