@@ -9,3 +9,13 @@ const user =
 		console.log ( this.nome, this.email );
 	}
 }
+
+// user.exibir_Infos();
+
+const exibir = function()
+{
+	console.log ( this.nome, this.email );
+}
+
+const exibir_Nome = exibir.bind ( user ); // Prende à variável o objeto
+exibir_Nome();
