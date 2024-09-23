@@ -24,3 +24,8 @@ console.log ( `\n` );
 
 console.log( User.prototype.isPrototypeOf ( novo_User )); // User é protótipo de novo_User? true
 console.log ( `\n` );
+
+const novo_User_2 = new User ();
+console.log ( novo_User_2 );
+console.log ( `\n` );
+console.log ( novo_User_2.Exibir_Info() );
