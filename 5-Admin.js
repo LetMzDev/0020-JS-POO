@@ -4,12 +4,17 @@ export default class Admin extends User
 {
 	constructor ( nome, email, nascimento, role = "admin", ativo = true )
 	{
-		super ( nome, email, nascimento, role, ativo ); // Passar quais parâmetros que usará de User, O que será feito com estes parâmetros estão definidos na Super Class User ( caso algum parâmetro de User não seja necessário em Admin, não passar o parâmetro em super )
+		super ( nome, email, nascimento, role, ativo );
 	}
 
 	Criar_Curso ( nome_curso, qtd_vagas )
 	{
 		return `curso ${nome_curso} criado com ${qtd_vagas} vagas.`;
+	}
+
+	Exibir_Nome ()
+	{
+		return `${this.#nome}`
 	}
 }
 
@@ -18,6 +23,9 @@ export default class Admin extends User
 // console.log ( novo_Admin );
 // console.log ( `\n` );
 // console.log ( novo_Admin.Exibir_Info() );
+// console.log ( `\n` );
+
+// console.log ( novo_Admin.Exibir_Nome() );
 // console.log ( `\n` );
 
 // console.log ( novo_Admin.Criar_Curso ( "Programação", "1" ));

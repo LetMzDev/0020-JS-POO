@@ -17,7 +17,21 @@ export default class User
 
 	Exibir_Info ()
 	{
-		return `${this.#nome}, ${this.#email}`;
+		const obj_User = this.#Monta_Objeto_User();
+		return `${obj_User.nome}, ${obj_User.email}`;
+	}
+
+	#Monta_Objeto_User ()
+	{
+		return (
+			{
+				nome: this.#nome,
+				email: this.#email,
+				nascimento: this.#nascimento,
+				role: this.#role,
+				ativo: this.#ativo,
+			}
+		)
 	}
 }
 
