@@ -64,4 +64,9 @@ export default class User
 		if ( this.role === "docente" )
 			return `dados docente: ${this.nome}, ${this.email}`
 	}
+
+	static Exibir_Info ( nome, email )
+	{
+		return `${nome}, ${email}`
+	}
 }

@@ -13,3 +13,7 @@ console.log ( `\n` );
 const novo_Docente = new Docente ( "Selina", "selina@.com", "30-10/1010" );
 console.log ( novo_Docente.Exibir_Info() );
 console.log ( `\n` );
+
+const dados_Ficticios = User.Exibir_Info ( 'Zaky', 'zaky@c.com' );
+console.log ( dados_Ficticios );
+console.log ( `\n` );
