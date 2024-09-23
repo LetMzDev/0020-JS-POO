@@ -15,23 +15,35 @@ export default class User
 		this.#ativo = ativo;
 	}
 
-	Exibir_Info ()
+	get nome ()
 	{
-		const obj_User = this.#Monta_Objeto_User();
-		return `${obj_User.nome}, ${obj_User.email}`;
+		return this.#nome;
 	}
 
-	#Monta_Objeto_User ()
+	get email ()
 	{
-		return (
-			{
-				nome: this.#nome,
-				email: this.#email,
-				nascimento: this.#nascimento,
-				role: this.#role,
-				ativo: this.#ativo,
-			}
-		)
+		return this.#email
+	}
+
+	get nascimento ()
+	{
+		return this.#nascimento
+	}
+
+	get role ()
+	{
+		return this.#role
+	}
+
+	get ativo ()
+	{
+		return this.#ativo
+	}
+
+	Exibir_Info ()
+	{
+		// const obj_User = this.#Monta_Objeto_User();
+		return `${obj_User.nome}, ${obj_User.email}`;
 	}
 }
 
