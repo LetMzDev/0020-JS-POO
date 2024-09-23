@@ -40,10 +40,17 @@ export default class User
 		return this.#ativo
 	}
 
+	set nome ( novo_Nome )
+	{
+		if ( novo_Nome === "" )
+			throw new Error ( "Formado do nome não é válido" );
+
+		this.#nome = novo_Nome;
+	}
+
 	Exibir_Info ()
 	{
-		// const obj_User = this.#Monta_Objeto_User();
-		return `${obj_User.nome}, ${obj_User.email}`;
+		return `${this.nome}, ${this.email}`;
 	}
 }
 
