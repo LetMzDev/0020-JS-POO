@@ -11,17 +11,10 @@ export default class Admin extends User
 	{
 		return `curso ${nome_curso} criado com ${qtd_vagas} vagas.`;
 	}
+
+	Exibir_Info ()
+	{
+		const infos = super.Exibir_Info();
+		return `admin - ${infos}`
+	}
 }
-
-// const novo_Admin = new Admin ( "Selina", "selina@.com", "15-12-3500" );
-
-// console.log ( novo_Admin );
-// console.log ( `\n` );
-// console.log ( novo_Admin.Exibir_Info() );
-// console.log ( `\n` );
-
-// console.log ( novo_Admin.Exibir_Nome() );
-// console.log ( `\n` );
-
-// console.log ( novo_Admin.Criar_Curso ( "Programação", "1" ));
-// console.log ( `\n` );
