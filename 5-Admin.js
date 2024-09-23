@@ -1,6 +1,6 @@
 import User from "./4-User.js";
 
-class Admin extends User
+export default class Admin extends User
 {
 	constructor ( nome, email, nascimento, role = "admin", ativo = true )
 	{
@@ -13,12 +13,12 @@ class Admin extends User
 	}
 }
 
-const novo_Admin = new Admin ( "Selina", "selina@.com", "15-12-3500" );
+// const novo_Admin = new Admin ( "Selina", "selina@.com", "15-12-3500" );
 
-console.log ( novo_Admin );
-console.log ( `\n` );
-console.log ( novo_Admin.Exibir_Info() );
-console.log ( `\n` );
+// console.log ( novo_Admin );
+// console.log ( `\n` );
+// console.log ( novo_Admin.Exibir_Info() );
+// console.log ( `\n` );
 
-console.log ( novo_Admin.Criar_Curso ( "Programação", "1" ));
-console.log ( `\n` );
+// console.log ( novo_Admin.Criar_Curso ( "Programação", "1" ));
+// console.log ( `\n` );

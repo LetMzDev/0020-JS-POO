@@ -2,7 +2,7 @@
 
 import User from "./4-User.js";
 
-class Docente extends User
+export default class Docente extends User
 {
 	constructor ( nome, email, nascimento, role = "docente", ativo = true )
 	{
@@ -15,9 +15,9 @@ class Docente extends User
 	}
 }
 
-const nova_Docente = new Docente ( "Ana", "ana@.com", "17-15-3600" );
-console.log ( nova_Docente.Aprovar_Estudante ( 'Juliana', 'JavaScript' ));
-console.log ( `\n` );
+// const nova_Docente = new Docente ( "Ana", "ana@.com", "17-15-3600" );
+// console.log ( nova_Docente.Aprovar_Estudante ( 'Juliana', 'JavaScript' ));
+// console.log ( `\n` );
 
-console.log ( nova_Docente.Exibir_Info() );
-console.log ( `\n` );
+// console.log ( nova_Docente.Exibir_Info() );
+// console.log ( `\n` );
